@@ -73,7 +73,6 @@ const placeBet = async (req, res) => {
       0
     );
     const betsString = await JSON.stringify(bets);
-    console.log(`bets: ${betsString}`);
     const bet = new Bet({
       username,
       roundId: currentRound.roundId,
